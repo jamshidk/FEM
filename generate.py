@@ -14,10 +14,12 @@ d1=1
 d2=1
 p=5
 m=3
-
+R=0.2
 element_type= 'D2TR3N'
 
-NL, EL= uniform_mesh(d1,d2,p,m, element_type)
+#NL, EL= uniform_mesh(d1,d2,p,m, element_type)
+
+NL, EL= void_mesh(d1,d2,p,m, R, element_type)
 
 NoN=np.size(NL, 0)
 NoE=np.size(EL, 0)

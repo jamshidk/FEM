@@ -146,20 +146,22 @@ def void_mesh(d1, d2, p, m, R, element_type):
                 EL[(i-1)*(4*p)+j-1,2]=EL[(i-1)*(4*p)+j-1,3]+1
                 EL[(i-1)*(4*p)+j-1,1]=EL[(i-1)*(4*p)+j-1,0]+1
                 
-        if element_type == 'D2TR3N':
-            NPE_new=3
-            NoE_new=2*NoE
-            EL_new=np.zeros([NoE_new,NPE_new])
+    
+    if element_type == 'D2TR3N':
+        NPE_new=3
+        NoE_new=2*NoE
+        EL_new=np.zeros([NoE_new,NPE_new])
             
-            for i in range(1, NoE+1):
-                EL_new[2*(i-1),0]=EL[i-1,0]
-                EL_new[2*(i-1),1]=EL[i-1,1]
-                EL_new[2*(i-1),2]=EL[i-1,2]
+        for i in range(1, NoE+1):
+            EL_new[2*(i-1),0]=EL[i-1,0]
+            EL_new[2*(i-1),1]=EL[i-1,1]
+            EL_new[2*(i-1),2]=EL[i-1,2]
                 #for the second trianle element
-                EL_new[2*(i-1)+1,0]=EL[i-1,0]
-                EL_new[2*(i-1)+1,1]=EL[i-1,2]
-                EL_new[2*(i-1)+1,2]=EL[i-1,3]
-            EL=EL_new
+            EL_new[2*(i-1)+1,0]=EL[i-1,0]
+            EL_new[2*(i-1)+1,1]=EL[i-1,2]
+            EL_new[2*(i-1)+1,2]=EL[i-1,3]
+        
+        EL=EL_new
             
     EL=EL.astype(int)  
              

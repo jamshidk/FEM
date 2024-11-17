@@ -8,5 +8,6 @@ The third part which is the post porcess and create the plot
 
 
 <img src="displacement_x.png" alt="Image description" width="300">
+<img src="stress_xx.png" alt="Image description" width="300">
 
 

@@ -8,5 +8,4 @@ The third part which is the post porcess and create the plot
 
 
 <img src="displacement_x.png" alt="Image 1" width="300" style="float: left; margin-right: 20px;">
-<img src="stress_xx.png" alt="Image 2" width="300">
-
+<img src="stress_xx.png" alt="Image 2" width="300" style="float: left;">

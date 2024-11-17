@@ -7,7 +7,7 @@ Second part of the code which is basically creating the element stiffness and as
 The third part which is the post porcess and create the plot
 
 
-<img src="displacement_x.png" alt="Image description" width="300">
+<img src="displacement_x.png" alt="Image description" width="300" style="float: left; margin-right: 20px;">
 <img src="stress_xx.png" alt="Image description" width="300">
 
 

@@ -1,4 +1,4 @@
 Creating either triangular or square element mesh ---
-I dont remember what FE1.py code was but two other python codes generate the mesh 
+<img src="path/to/your/image.png" alt="Image description" width="300">
 
 
